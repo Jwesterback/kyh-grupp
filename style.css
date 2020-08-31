@@ -1,1 +1,23 @@
 
+header{
+    background: #6D9DB1;
+    padding: 20px;
+}
+h1{
+    text-align: center;
+    color: white;
+}
+nav{
+    margin: 0 auto;
+    width: 80%;
+    text-align: center;
+}
+nav label{
+    color: white;
+}
+.open{
+    display: inline-block;
+}
+.closed{
+    display: none;
+}
