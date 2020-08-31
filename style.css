@@ -187,7 +187,8 @@ header{
 }
 
 /* ====== cover ====== */ 
-.cover{
+.cover{    
+    min-height: 100%;
     background-color: rgb(53, 53, 53);
     background-image: url(/images/background-pic.jpg);
     background-position: -160px top;   
