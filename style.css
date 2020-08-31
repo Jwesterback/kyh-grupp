@@ -63,8 +63,12 @@ table {
   Custom styles
   ========================================
 */
-* {
-    box-sizing: border-box;
+*,
+*:before,
+*:after {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
 }
 body {    
 	color: #18374F;
@@ -80,9 +84,6 @@ body {
   Grid
   ========================================
 */
-
-
-
 /* 
   ========================================
   Common styles
@@ -188,12 +189,17 @@ header{
 /* ====== cover ====== */ 
 .cover{
     background-color: rgb(53, 53, 53);
-	background-image: url(/images/background-pic.jpg);
-	background-position: center center;
-  	background-repeat: no-repeat;  
-  /* This is what makes the background image rescale based
-     on the container's size */
-  	background-size: cover;
+    background-image: url(/images/background-pic.jpg);
+    background-position: -160px top;   
+}
+@media screen and (min-width: 870px){
+    .cover{
+        background-position: center center;
+        background-repeat: no-repeat;  
+    /* This is what makes the background image rescale based
+        on the container's size */
+        background-size: cover;
+    }
 }
 
 /* ====== footer ====== */ 
@@ -201,6 +207,7 @@ footer{
     padding-left: 5%;
     background: #f7f1eb;
     text-align: center;
+    font-weight: 400;
 }
 footer p{
     margin-top: 15px;
