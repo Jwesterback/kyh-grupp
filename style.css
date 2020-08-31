@@ -74,6 +74,16 @@ body {
 	line-height: 180%;
 }
 
+/*
+  ========================================
+  Grid
+  ========================================
+*/
+main{
+    /* display: flex; */
+
+}
+
 /* 
   ========================================
   Common styles
@@ -116,6 +126,13 @@ header nav label{
     display: none;
 }
 
+/* ====== cards with link ====== */ 
+.link h2{
+    text-align: center;
+}
+.link img{
+    width: 100%;
+}
 
 /* ====== footer text ====== */ 
 footer h3{
