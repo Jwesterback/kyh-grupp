@@ -192,4 +192,18 @@ header, footer{
 footer{
     padding-left: 5%;
     background: #f7f1eb;
+    text-align: center;
+}
+footer p{
+    margin-top: 15px;
+}
+/*footer on large screen*/
+@media screen and (min-width: 870px){
+    footer{
+        display: flex;
+        text-align: left;
+        justify-content: space-between;
+        padding-right: 5%;
+        align-items: flex-end;
+    }
 }
