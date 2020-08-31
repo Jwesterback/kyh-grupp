@@ -66,7 +66,7 @@ table {
 */
 
 body {    
-	color: #292f33;
+	color: #18374F;
 	font-size: calc(14px + (16 - 14) * ((100vw - 300px) / (1600 - 300)));
 	font-family: 'Raleway',sans-serif;
 	font-style: normal;
@@ -81,10 +81,7 @@ body {
 */
 
 @media screen and (min-width: 870px){
-    main{
-        display: flex;
-        justify-content: center;
-    }
+   
     .link{
         width: 30%;
         padding: 0 10px;
@@ -98,40 +95,30 @@ body {
 */
 /* ====== typography ====== */
 h1 {
-	color: aliceblue;
     font-size: 2.5rem;
-    font-weight: 800;
-	line-height: 1.3;
-    margin-bottom: 30px;
-    text-align: center;
+    font-weight: 500;
 }
 h2 {
     font-size: 2rem;
-    padding: 20px 10px;
 }
 
-/* ====== header& footer bgcolor ====== */ 
-header, footer{
-    background: #385C6C;
-    padding: 20px;
-}
-
-/* ====== small navigation ====== */ 
+/* ====== navigation ====== */ 
 nav{
-    margin: 0 auto;
-    width: 80%;
-    text-align: center;
+    margin: 1.5rem 0;
 }
-header nav label{
-    color: aliceblue;
-    size: 50px;
+nav a{
+    font-weight: 600;
+    text-decoration: none;
+    margin: 0 15px;
+    color: #18374F;
 }
-.open{
-    display: inline-block;
+
+/* ====== header& footer  ====== */ 
+header, footer{
+    padding: 20px 0;
 }
-.closed{
-    display: none;
-}
+
+
 
 /* ====== cards with link ====== */ 
 .link h2{
@@ -141,10 +128,3 @@ header nav label{
     width: 100%;
 }
 
-/* ====== footer text ====== */ 
-footer h3{
-    color: aliceblue;
-}
-footer ul{
-    color: aliceblue;
-}
