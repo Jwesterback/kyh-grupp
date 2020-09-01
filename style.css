@@ -80,10 +80,28 @@ body {
 }
 
 /*
-  ========================================
-  Grid
-  ========================================
+  ==========================================
+  Grid -- all this is for the sticky footer
+  ==========================================
 */
+html, body {
+    height: 100%;
+  }
+  body, .cover {
+    display: flex;
+    flex-direction: column;
+  }
+  .content {
+    flex: 1 0 auto;
+  }
+  footer {
+    flex-shrink: 0;
+  }
+@media screen and (min-width:870px){
+    .cover{
+        min-height: 100%;
+    }
+}
 /* 
   ========================================
   Common styles
@@ -189,18 +207,13 @@ header{
 /* ====== cover ====== */ 
 .cover{ 
     background-color: rgb(53, 53, 53);
-    background-image: url(/images/background-pic.jpg);
-    background-position: -160px top;   
-}
-@media screen and (min-width: 870px){
-    .cover{
-        background-position: center center;
-        background-repeat: no-repeat;  
-    /* This is what makes the background image rescale based
-        on the container's size */
-        background-size: cover;
+    background-image: url(/images/background-img.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;  
+/* This is what makes the background image rescale based
+    on the container's size */
+    background-size: cover;
     }
-}
 
 /* ====== footer ====== */ 
 footer{
