@@ -1,1 +1,224 @@
+/* font combination import Allerta Stencil and Open Sans */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,500;0,800;1,500&display=swap');
 
+
+/* 
+  ========================================
+  Browser reset
+  http://meyerweb.com/eric/tools/css/reset/ 
+	  v2.0 | 20110126
+	  License: none (public domain)
+  ========================================
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+
+/*
+  ========================================
+  Custom styles
+  ========================================
+*/
+*,
+*:before,
+*:after {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+body {    
+	color: #18374F;
+	font-size: calc(14px + (16 - 14) * ((100vw - 300px) / (1600 - 300)));
+	font-family: 'Raleway',sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 180%;
+}
+
+/*
+  ========================================
+  Grid
+  ========================================
+*/
+/* 
+  ========================================
+  Common styles
+  ========================================
+*/
+/* ====== typography ====== */
+h1 {
+    font-size: 3rem;
+    font-weight: 500;
+}
+
+/* h1 resize for large screen*/
+@media screen and (min-width: 870px){
+    h1{
+        font-size: 3.5rem;
+    }
+}
+
+h2 {
+    font-size: 2rem;
+    padding: 7px;
+}
+
+/* ====== navigation ====== */ 
+nav{
+    margin-left: 5%;
+    margin-bottom: 100px;
+}
+nav a{
+    font-weight: 600;
+    text-decoration: none;
+    margin: 0 5px;
+    padding: 5px;
+    color: #18374F;
+}
+nav a:last-child{
+    background-color: #FAF3A2;
+    border-radius: 5px;
+}
+
+/* ====== main content alignment ====== */
+header h1, main h2 {
+    text-align: center;
+}
+
+.main-content{
+    margin:50px 0;
+}
+
+/* ====== main content alignment on large screen ====== */ 
+@media screen and (min-width: 870px){
+    main, header h1 {
+        text-align: left;
+        margin-left: 20%;
+    }
+  
+    .main-content{
+        display: flex;
+        justify-content: space-between;
+        width: 90%;
+    }
+    .lg-text-left{
+        text-align: left;
+    }
+}
+
+/* ====== header& footer  ====== */ 
+header{
+    padding: 15px 0;
+}
+
+
+/* ====== cards with link ====== */ 
+.link{
+    width: 80%;
+    margin: 0 auto 25px auto;
+    padding: 10px;
+    background: #f7f1eb;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px 2px rgba(77, 76, 76, 0.75);
+}
+
+/* large screen card margins*/
+@media screen and (min-width: 870px){
+    .link{
+        margin: 0 0 25px 2%;
+    }
+}
+
+.link h2{
+    text-align: center;
+    width: 100%;
+}
+.link div{
+    width: 90%;
+    margin: 0 auto;
+}
+.link img{
+    width: 100%;
+    border-radius: 5px;
+}
+
+/* ====== cover ====== */ 
+.cover{ 
+    background-color: rgb(53, 53, 53);
+    background-image: url(/images/background-pic.jpg);
+    background-position: -160px top;   
+}
+@media screen and (min-width: 870px){
+    .cover{
+        background-position: center center;
+        background-repeat: no-repeat;  
+    /* This is what makes the background image rescale based
+        on the container's size */
+        background-size: cover;
+    }
+}
+
+/* ====== footer ====== */ 
+footer{
+    padding-left: 5%;
+    background: #f7f1eb;
+    text-align: center;
+    font-weight: 400;
+}
+footer p{
+    margin-top: 15px;
+}
+/*footer on large screen*/
+@media screen and (min-width: 870px){
+    footer{
+        display: flex;
+        text-align: left;
+        justify-content: space-between;
+        padding-right: 5%;
+        align-items: flex-end;
+    }
+}
